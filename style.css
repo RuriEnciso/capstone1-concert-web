@@ -15,11 +15,10 @@ html {
 
 :root {
   --color-primary: #fff;
-  --color-secondary: #F7F7F8;
+  --color-secondary: #f7f7f8;
   --color-tertiary: #272a31;
   --color-quaternary: #d3d3d3;
-  --color-quinary: #FF4F38;
-  /* --font-size-large: 24px; */
+  --color-quinary: #ff4f38;
 }
 
 body {
@@ -48,7 +47,7 @@ a {
   margin: 0;
 }
 
-.social-item  a {
+.social-item a {
   color: var(--color-primary);
 }
 
@@ -70,12 +69,12 @@ a {
 .nav-branding {
   display: flex;
   width: 4rem;
-  height: 4rem; 
-  background-image: url('./images/logo-onfire.png');
+  height: 4rem;
+  background-image: url('./images/logo-onfire2.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .nav-link {
@@ -118,7 +117,6 @@ a {
 }
 
 .principal-text {
-  /* color: var(--color-quinary); */
   font-size: 2.5rem;
   font-weight: 800;
   background-image: url(./images/bgForTittle.jpg);
@@ -133,7 +131,6 @@ a {
   border-top: solid var(--color-primary);
   border-bottom: solid var(--color-primary);
   padding: 0.5rem 0;
-  
 }
 
 .date {
@@ -232,10 +229,10 @@ a {
 }
 
 /* About page */
-
 .about-presentation {
   background-image: url(./images/beautiful-nature.png);
   background-repeat: no-repeat;
+
   /* background-size: cover; */
   text-align: center;
   padding: 2rem 4vw;
@@ -277,7 +274,7 @@ a {
   padding: 2rem 4vw;
 }
 
-.creative-tittle{
+.creative-tittle {
   width: 80%;
   text-align: center;
 }
@@ -302,14 +299,11 @@ a {
 }
 
 .summit-images {
-  margin: 0 4vw;
-}
-
-.summit-images {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   gap: 0.5rem;
+  margin: 0 4vw;
 }
 
 .card1,
@@ -338,6 +332,7 @@ a {
   text-align: center;
   color: #fff;
 }
+
 .concert-name {
   position: absolute;
   font-weight: 800;
@@ -362,7 +357,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-
   .partners {
     display: none;
   }
@@ -430,6 +424,7 @@ footer {
   .partners-list {
     padding: 0;
   }
+
   .partner img {
     width: 100px;
   }
