@@ -3,6 +3,513 @@
 html {
   box-sizing: border-box;
   font-size: 16px;
-  font-family: 'Inter', sans-serif;
+  font-family: 'Lato', sans-serif;
   scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+:root {
+  --color-primary: #fff;
+  --color-secondary: #f7f7f8;
+  --color-tertiary: #272a31;
+  --color-quaternary: #d3d3d3;
+  --color-quinary: #ff4f38;
+}
+
+body {
+  background-color: var(--color-primary);
+  margin: 0 auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: var(--color-tertiary);
+  text-decoration: none;
+}
+
+.social-header {
+  background-color: var(--color-tertiary);
+  padding-right: 5rem;
+}
+
+.social-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 0;
+}
+
+.social-item a {
+  color: var(--color-primary);
+}
+
+.navbar {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+}
+
+.nav-branding {
+  display: flex;
+  width: 4rem;
+  height: 4rem;
+  background-image: url('./images/logo-onfire2.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.nav-link {
+  transition: 0.7s ease;
+}
+
+.nav-link-special {
+  border: solid 4px;
+  padding: 1rem;
+  color: var(--color-quinary);
+}
+
+.nav-link:hover {
+  color: var(--color-quinary);
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.slide {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-tertiary);
+}
+
+.presentation {
+  background-image: url("./images/gray-background.png");
+  padding: 3rem 1rem;
+}
+
+.greeting {
+  color: var(--color-quinary);
+}
+
+.principal-text {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background-image: url(./images/bgForTittle.jpg);
+  background-size: contain;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+.presentation-description {
+  border-top: solid var(--color-primary);
+  border-bottom: solid var(--color-primary);
+  padding: 0.5rem 0;
+}
+
+.date {
+  color: var(--color-tertiary);
+  font-weight: 900;
+  margin-top: 3rem;
+}
+
+.main-program {
+  background-image: url(./images/pattern_bg.png);
+  background-color: var(--color-tertiary);
+  padding: 2rem 0.5rem;
+  text-align: center;
+}
+
+.main-program-tittle {
+  color: var(--color-primary);
+}
+
+.program-description {
+  color: var(--color-primary);
+}
+
+.program-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 0.3rem;
+  text-align: initial;
+}
+
+.program {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+}
+
+.program:hover {
+  border: solid #fff;
+}
+
+.program-tittle {
+  color: var(--color-quinary);
+}
+
+.btn {
+  height: 3rem;
+  margin-top: 2rem;
+  color: var(--color-primary);
+  background-color: var(--color-quinary);
+  border: none;
+  cursor: pointer;
+}
+
+.artists {
+  padding: 2rem 0.5rem;
+  text-align: center;
+}
+
+.artists-list {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: repeat(6, auto);
+  gap: 1rem;
+}
+
+.artist {
+  display: flex;
+  gap: 1rem;
+}
+
+.artist * {
+  text-align: initial;
+  margin: 0.2rem;
+}
+
+.artist img {
+  width: 106px;
+}
+
+.band-presentation {
+  color: var(--color-quinary);
+}
+
+.partners,
+.about-partners {
+  background-color: var(--color-tertiary);
+  text-align: center;
+}
+
+.partner-title {
+  color: var(--color-quaternary);
+}
+
+.partners-list {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* About page */
+.about-presentation {
+  background-image: url(./images/beautiful-nature.png);
+  background-repeat: no-repeat;
+
+  /* background-size: cover; */
+  text-align: center;
+  padding: 2rem 4vw;
+  background-color: var(--color-quaternary);
+}
+
+.about-presentation h2 {
+  color: var(--color-quinary);
+}
+
+.about-tittle {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--color-quinary);
+  font-family: sans-serif;
+}
+
+.about-paragraph {
+  color: var(--color-primary);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.conctac-text {
+  color: var(--color-primary);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.email-address {
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.creative-commons {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 2rem 4vw;
+}
+
+.creative-tittle {
+  width: 80%;
+  text-align: center;
+}
+
+.creative-text {
+  color: #838383;
+  text-align: center;
+}
+
+.creative-logo {
+  width: 100%;
+  text-align: center;
+}
+
+.past-concerts {
+  text-align: center;
+}
+
+.summits-description {
+  color: #838383;
+  text-align: center;
+}
+
+.summit-images {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 4vw;
+}
+
+.card1,
+.card2 {
+  position: relative;
+}
+
+.card1::after,
+.card2::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: -webkit-fill-available;
+  background: linear-gradient(rgba(236, 82, 66, 0.2), rgba(236, 82, 66, 0.2));
+}
+
+.concert-year {
+  position: absolute;
+  font-weight: 800;
+  font-size: 2rem;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.concert-name {
+  position: absolute;
+  font-weight: 800;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.concert-img {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+}
+
+@media (max-width: 768px) {
+  .partners {
+    display: none;
+  }
+
+  .navbar {
+    flex-direction: row-reverse;
+  }
+
+  .social-menu {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .hamburger.active .slide:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .slide:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .slide:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 55px;
+    gap: 0;
+    flex-direction: column;
+    background-color: var(--color-tertiary);
+    width: 100%;
+    height: auto;
+    padding-bottom: 1rem;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 1;
+  }
+
+  .nav-link {
+    color: var(--color-primary);
+  }
+
+  .nav-item {
+    margin: 16px 0;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .brand-container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  /* About secction */
+
+  .partners-list {
+    padding: 0;
+  }
+
+  .partner img {
+    width: 100px;
+  }
+}
+
+@media (min-width: 768px) {
+  .presentation {
+    padding: 3rem 0;
+  }
+
+  .presentation-container {
+    width: 60%;
+    margin-left: 7vw;
+  }
+
+  .program-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+
+  .program {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    max-width: 225px;
+    text-align: center;
+  }
+
+  .artist {
+    padding: 0;
+  }
+
+  .artists-list {
+    grid-template-columns: repeat(2, auto);
+    padding: 2rem 7vw;
+  }
+
+  /* About page */
+  .about-presentation {
+    padding: 5rem 20vw;
+  }
+
+  .creative-commons {
+    padding: 2rem 20vw;
+  }
+
+  .creative-tittle {
+    width: 100%;
+  }
+
+  .past-concerts {
+    padding: 1rem 20vw;
+  }
+
+  .card1,
+  .card2 {
+    position: relative;
+    width: 49%;
+    height: 350px;
+  }
+
+  .card1::after,
+  .card2::after {
+    height: 300px;
+  }
+
+  .concert-img {
+    height: 300px;
+    display: block;
+  }
+
+  .about-partners {
+    display: none;
+  }
+
+  .about-footer {
+    background-color: var(--color-tertiary);
+    color: #fff;
+  }
 }
