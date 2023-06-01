@@ -30,7 +30,7 @@ After you're finished please remove all the comments and instructions!
   <img src="murple_logo.png" alt="logo" width="140"  height="auto" /> -->
   <br/>
 
-  <h3><b>ON FIRE INDIE ROCK AND ROLL FESTIVAL</b></h3>
+  <h3><b>Fisrt Captone Project</b></h3>
 
 </div>
 
@@ -65,7 +65,7 @@ After you're finished please remove all the comments and instructions!
 <!-- > Describe your project in 1 or 2 sentences.-->
 
 **ON FIRE INDIE ROCK AND ROLL FESTIVAL** 
-This is the fisrt captone project at Microverse.
+is the fisrt captone project at Microverse.
 It is a basic responsive website made with HTML, CSS, and JavaScript. I chose to simulate a landing page for an indie rock and roll festival called "On Fire".
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -112,11 +112,7 @@ It is a basic responsive website made with HTML, CSS, and JavaScript. I chose to
 
 <!-- > Add a link to your deployed project. -->
 
-- [ Website Live Demo Link](https://rurienciso.github.io/Portfolio-Project/)
-
-- Project presentation video:
-
-[![Project presentation: video demo](https://cdn.loom.com/sessions/thumbnails/0c6936d949a14bf9baac2f48b5802d61-with-play.gif)](https://www.loom.com/share/0c6936d949a14bf9baac2f48b5802d61)
+- [ Website Live Demo Link](https://rurienciso.github.io/capstone1-concert-web/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
