@@ -166,6 +166,11 @@ a {
   align-items: center;
   gap: 1rem;
   background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem;
+}
+
+.program:hover {
+  border: solid #fff;
 }
 
 .program-tittle {
@@ -178,6 +183,7 @@ a {
   color: var(--color-primary);
   background-color: var(--color-quinary);
   border: none;
+  cursor: pointer;
 }
 
 .artists {
@@ -431,9 +437,13 @@ footer {
 }
 
 @media (min-width: 768px) {
+  .presentation {
+    padding: 3rem 0;
+  }
+
   .presentation-container {
     width: 60%;
-    margin-left: 15%;
+    margin-left: 7vw;
   }
 
   .program-list {
@@ -447,13 +457,17 @@ footer {
     flex-direction: column;
     align-items: center;
     gap: 0;
-    max-width: 200px;
+    max-width: 225px;
     text-align: center;
+  }
+
+  .artist {
+    padding: 0;
   }
 
   .artists-list {
     grid-template-columns: repeat(2, auto);
-    padding: 0 8rem;
+    padding: 2rem 7vw;
   }
 
   /* About page */
@@ -461,14 +475,22 @@ footer {
     padding: 5rem 20vw;
   }
 
-  .creative-text {
-    width: 60%;
+  .creative-commons {
+    padding: 2rem 20vw;
+  }
+
+  .creative-tittle {
+    width: 100%;
+  }
+  
+  .past-concerts {
+    padding: 1rem 20vw;
   }
 
   .card1,
   .card2 {
     position: relative;
-    width: 40%;
+    width: 49%;
     height: 350px;
   }
 
